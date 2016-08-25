@@ -1,11 +1,13 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     coffee = require('gulp-coffee'),
-	browserify = require('gulp-browserify'),
-	concats = require('gulp-concat');
+  	browserify = require('gulp-browserify'),
+    compass = require('gulp-compass'),
+	  concats = require('gulp-concat');
 
 var coffeeSources = ['components/coffee/tagline.coffee'];
 var jsSources = ['components/scripts/*.js'];
+var sassSources = ['components/sass/style.scss'];
 
 gulp.task('coffee', function() {
   gulp.src(coffeeSources)
