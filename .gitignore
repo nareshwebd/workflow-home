@@ -1,5 +1,7 @@
 .DS_Store
 node_modules
+.metadata
 .tmp
+.vscode
 .sass-cache
 builds/**/images/*
